@@ -1111,13 +1111,13 @@ ul.timeline > li:before {
 	}
 
 	.content {
-		padding-left: 275px;
 		margin-left: 10px;
 		margin-right: 10px;
 	}
 
 	.footer {
-		margin-left: 275px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.topbar .bars button {
