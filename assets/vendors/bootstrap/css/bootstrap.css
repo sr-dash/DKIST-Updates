@@ -195,6 +195,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  margin: 0 !important;
 }
 
 svg {
@@ -473,6 +474,7 @@ mark,
 .img-fluid {
   max-width: 30%;
   height: auto;
+  /* margin: 0 !important; */
 }
 
 .img-thumbnail {
@@ -480,7 +482,7 @@ mark,
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
 }
 

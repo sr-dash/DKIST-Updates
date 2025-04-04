@@ -22,26 +22,12 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js?v=20250403133710"></script>
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 	<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#myTable').DataTable({
-				"pageLength": 5,
-				"lengthMenu": [[5, 10, 20, 50, 100, -1], [5, 10, 20, 50, 100, "All"]],
-				"order": [[0, "desc"]],
-				"dom": "<'top'p>lfrt<'bottom'p><'clear'>",
-				"language": { "search": 'Search a string (e.g. 2023-10-16 or EID_2_114 or GOES_CLASS_M )' }
-			});
-		});
-	</script>
+
 
 </head>
 
 
-
-
-
 <body>
-
 <!--Content Start-->
 <div class="content transition">
 	<div class="container-fluid dashboard">
@@ -62,47 +48,55 @@
 								<table id="myTable" class="table table-striped table-bordered">
 									<thead>
 										<tr>
-											<th>Name</th>
-											<th>Observation Duration</th>
-											<th>Thumbnail</th>
+											<th style="text-align:center; font-size:20px; color:#3B82F6; position:sticky; top:0; background-color:white; z-index:999">Name</th>
+											<th style="text-align:center; font-size:20px; color:#3B82F6; position:sticky; top:0; background-color:white; z-index:999">Observation Duration</th>
+											<th style="text-align:center; font-size:20px; color:#3B82F6; position:sticky; top:0; background-color:white; z-index:999">Context Imager</th>
+											<th style="text-align:center; font-size:20px; color:#3B82F6; position:sticky; top:0; background-color:white; z-index:999">SDO Image</th>
+											<th style="text-align:center; font-size:20px; color:#3B82F6; position:sticky; top:0; background-color:white; z-index:999">Related Publications</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
-											<td>$15/hr</td>
-											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
-
+											<td><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
+											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC</td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
 										</tr>
 										<tr>
-											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
+											<td><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
 											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC/hr</td>
-											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
-
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
 										</tr>
 										<tr>
-											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
-											<td>$15/hr</td>
-											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
-										
+											<td><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
+											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC</td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
 										</tr>
 										<tr>
-											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
+											<td><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
 											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC/hr</td>
-											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
-										
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
 										</tr>
 										<tr>
-											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
-											<td>$15/hr</td>
-											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
-
+											<td><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
+											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC</td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
 										</tr>
 										<tr>
-											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
+											<td><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
 											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC/hr</td>
-											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
-
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
+											<td style="padding: 0; margin: 0;"><img src="Thumbs/ANZKQ/img_cont.png" height='30%'></td>
 										</tr>
 									</tbody>
 								</table>
