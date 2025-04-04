@@ -19,8 +19,26 @@
 	<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
 	<!-- Icon LineAwesome CSS-->
 	<link rel="stylesheet" href="assets/vendors/lineawesome/css/line-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?v=20250403133710"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+	<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#myTable').DataTable({
+				"pageLength": 5,
+				"lengthMenu": [[5, 10, 20, 50, 100, -1], [5, 10, 20, 50, 100, "All"]],
+				"order": [[0, "desc"]],
+				"dom": "<'top'p>lfrt<'bottom'p><'clear'>",
+				"language": { "search": 'Search a string (e.g. 2023-10-16 or EID_2_114 or GOES_CLASS_M )' }
+			});
+		});
+	</script>
 
 </head>
+
+
+
+
 
 <body>
 
@@ -41,15 +59,39 @@
 						<div class="card-body">
 							<!-- Table with outer spacing -->
 							<div class="table-responsive">
-								<table class="table">
+								<table id="myTable" class="table table-striped table-bordered">
 									<thead>
 										<tr>
-											<th>NAME</th>
+											<th>Name</th>
 											<th>Observation Duration</th>
 											<th>Thumbnail</th>
 										</tr>
 									</thead>
 									<tbody>
+										<tr>
+											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
+											<td>$15/hr</td>
+											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
+
+										</tr>
+										<tr>
+											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
+											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC/hr</td>
+											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
+
+										</tr>
+										<tr>
+											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
+											<td>$15/hr</td>
+											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
+										
+										</tr>
+										<tr>
+											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/AMVDR">AMVDR</a></td>
+											<td>2024/10/06, 18:34 - 2024/10/06, 19:38 UTC/hr</td>
+											<td class="text-bold-500"><img src="Thumbs/ANZKQ/img_cont.png" class="img-fluid p-3"></td>
+										
+										</tr>
 										<tr>
 											<td class="text-bold-500"><a href="https://dkist.data.nso.edu/datasetview/ANZKQ">ANGKQ</a></td>
 											<td>$15/hr</td>
